@@ -1,0 +1,268 @@
+# Disease definition code dictionary
+
+# -----
+# ADHD
+disease_icd10 <- c('F900')
+disease_icd9 <- NULL
+disease_ops <- NULL
+
+self_code <- 18 # Field 20544
+
+# -----
+# Autism spectrum disorder
+disease_icd10 <- c('F840')
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- NULL
+disease_s2 <- NULL
+
+# -----
+# Bipolar disorder
+disease_icd10 <- c(paste0('F31',0:9))
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- NULL
+disease_s2 <- NULL
+
+# -----
+# Major Depression Disorder (MDD)
+disease_icd10 <- c(paste0('F32',c(0:3,8,9)),
+                   paste0('F33',c(0:4,8,9)))
+disease_icd9 <- NULL
+disease_ops <- NULL
+
+disease_s1 <- c(1286)
+disease_s2 <- NULL
+
+# self-report mental problem
+self_code <- 11 # field 20544
+
+# -----
+# Schizophrenia (SCZ)
+disease_icd10 <- paste0('F20',c(0:6,8,9))
+disease_icd9 <- NULL
+disease_ops <- NULL
+
+disease_s1 <- c(1289)
+disease_s2 <- NULL
+
+# self-report mental problem
+self_code <- 2 # field 20544
+
+# -----
+# Atrial Fibrilation
+disease_icd10 <- c(paste0('I48',c(0:4,9)))
+disease_icd9 <- c('4273')
+disease_ops <- c('K571',paste0('K62',1:4))
+disease_s1 <- 1471
+disease_s2 <- NULL
+
+# -----
+# Angina
+disease_icd10 <- paste0('I20',c(0,1,8,9))
+disease_icd9 <- c('4139')
+disease_ops <- NULL
+disease_s1 <- 1074
+disease_s2 <- NULL
+
+# -----
+# CAD
+disease_icd10 <- c(paste0('I21',c(0,1,2,3,4,9)), paste0('I22',c(0,1,8,9)),
+               paste0('I23',c(1,6,8)),paste0('I24',c(1)),paste0('I25',c(2)))
+disease_icd9 <- c(paste0('410',9),paste0('411',9),paste0('412',9))
+disease_ops <- c(paste0('K40',c(1:4)),paste0('K41',c(1:4)),
+             paste0('K45',c(1:5)),paste0('K49',c(1,2,8,9)),
+             paste0('K50',c(2)),paste0('K75',c(1:4,8,9)))
+disease_s1 <- c(1075)
+disease_s2 <- c(1070,1095,1523)
+
+# -----
+# Heart failure
+disease_icd10 <- c('I110','I130','I132','I255','I420','I425',
+                   'I428','I429','I500','I1501','I1509')
+disease_icd9 <- c('4280','4281','4289','4254')
+disease_ops <- NULL
+disease_s1 <- NULL
+disease_s2 <- NULL
+
+# -----
+# Ischemic stroke (IS)
+disease_icd10 <- c(paste0('I60',0:9),
+                   paste0('I61',c(0:6,8,9)),
+                   paste0('I62',c(0,1,9)),
+                   paste0('I63',c(0:6,8,9)),
+                   'I64')
+disease_icd9 <- c('4309','4319','4349','4369')
+disease_ops <- NULL
+disease_s1 <- c(1075)
+disease_s2 <- NULL
+
+# -----
+# Peripheral artery disease (PAD)
+disease_icd10 <- c('I7000','I7001','I7020','I7021','I7080','I7081','I7090','I7091',
+                'I738','I739')
+disease_icd9 <- c('4400','4402','4438','4439')
+disease_ops <- c('X093','X094','X095','L216','L513','L516','L518','L521','L522','L541',
+                'L544','L548','L591','L592','L593','L594','L595','L596','L597','L598',
+                'L601','L602','L631','L635','L639','L667')
+disease_s1 <- c(1067,1087,1088)
+disease_s2 <- c(1102,1108,1440)
+
+# -----
+# Pulmonary artery hypertension (PAH)
+disease_icd10 <- c('I270')
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- NULL
+disease_s2 <- NULL
+
+# -----
+# Type 2 diabetes (T2D)
+disease_icd10 <- c(paste0('E11',0:9))
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- c(1223)
+disease_s2 <- NULL
+
+# -----
+# CKD
+disease_icd10 <- c('D593','D638','E102','E112','E132','E142',
+               paste0('E85',c(0:4,8,9)),
+               paste0('I12',c(8,9)),
+               paste0('I13',c(1,2)),
+               'I151','M103','N001','N011','N020','N021',
+               'N030','N031',paste0('N04',c(0:9)),
+               'N050','N051','N060','N061','N071',
+               paste0('N08',c(0:5)),
+               'N10',paste0('N11',c(0,1,8,9)),'N12',
+               paste0('N14',c(1:4)),'N165',
+               paste0('N17',c(0:2,8,9)),
+               paste0('N18',c(0:5,9)),'N19',
+               'N250','N990',paste0('Q61',c(0:5,8,9)),
+               'T824','T861','Y602','Y841',paste0('Z49',c(0:2)),
+               'Z940','Z992')
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- NULL
+disease_s2 <- NULL
+
+# -----
+# Asthma
+disease_icd10 <- c(paste0('J45',c(0,1,8,9)))
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- c(1111)
+disease_s2 <- NULL
+
+# -----
+# Crohn's disease
+disease_icd10 <- paste0('K50',c(0,1,8,9))
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- NULL
+disease_s2 <- NULL
+
+# -----
+# Ulcerative colitis (UC) 
+disease_icd10 <- paste0('K51',c(0:5,8,9))
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- NULL
+disease_s2 <- NULL
+
+# -----
+# Inflammatory bowel disease (IBD)
+disease_icd10 <- c(paste0('K50',c(0,1,8,9)),
+                   paste0('K51',c(0:5,8,9)))
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- NULL
+disease_s2 <- NULL
+
+# -----
+# Primary biliary cholangitis (PBC)
+disease_icd10 <- c('K743')
+disease_icd9 <- c('5761')
+disease_ops <- NULL
+disease_s1 <- 1506
+disease_s2 <- NULL
+
+# -----
+# Primary sclerosing cholangitis (PSC)
+disease_icd10 <- c('K830')
+disease_icd9 <- c('5761')
+disease_ops <- NULL
+disease_s1 <- 1475
+disease_s2 <- NULL
+
+# -----
+# Rheumatoid arthritis (RA)
+disease_icd10 <- c(paste0('M05',c(0:3,8,9)),
+                   paste0('M06',c(0:4,8,9)))
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- 1464
+disease_s2 <- NULL
+
+# -----
+# Systemic Lupus Erythematosus (SLE)
+disease_icd10 <- c('M320','M321','M328','M329')
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- 1381
+disease_s2 <- NULL
+
+# -----
+# breast cancer
+disease_icd10 <- c(paste0('C50',0:9))
+disease_icd9 <- c(paste0('174',c(0,3,5,8,9)))
+disease_ops <- NULL
+disease_s1 <- 1002 # field 200001
+disease_s2 <- NULL
+
+# -----
+# Lung cancer
+disease_icd10 <- c(paste0('C34',0:9))
+disease_icd9 <- c(paste0('162',c(3,9)))
+disease_ops <- NULL
+disease_s1 <- c(1001,1027,1028) # field 200001
+disease_s2 <- NULL
+
+# -----
+# Ovarian cancer
+disease_icd10 <- c('C56')
+disease_icd9 <- c('1830')
+disease_ops <- NULL
+disease_s1 <- 1039 # field 200001
+disease_s2 <- NULL
+
+# -----
+# Prostate cancer
+disease_icd10 <- c('C61')
+disease_icd9 <- c(paste0('185',c(9)))
+disease_ops <- NULL
+disease_s1 <- 1044 # field 200001
+disease_s2 <- NULL
+
+# -----
+# Osteoporosis
+disease_icd10 <- c(paste0('M800',c(0,1,3,5,7:9)),
+                   paste0('M801',c(0,1,5,8,9)),
+                   paste0('M804',c(0,1,5,6,8,9)),
+                   paste0('M805',c(0,2,3,5,8)),
+                   paste0('M808',c(0:2,5:9)),
+                   paste0('M809',0:9),
+                   paste0('M810',c(0,2,5,8,9)),
+                   paste0('M811',c(0,9)),
+                   paste0('M812',c(0,9)),
+                   paste0('M813',c(0,8,9)),
+                   paste0('M814',c(0,3:5,7:9)),
+                   paste0('M815',c(0,1,5,8,9)),
+                   paste0('M816',c(5,7:9)),
+                   paste0('M818',c(0,5,8,9)),
+                   paste0('M819',0:9))
+disease_icd9 <- NULL
+disease_ops <- NULL
+disease_s1 <- 1309
+disease_s2 <- NULL
+
